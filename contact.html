@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Jawad Ahmed">
+    <meta name="description" content="Get in touch with Ember & Spice Restaurant.">
+    <meta name="keywords" content="restaurant, contact, bbq, reservations">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ember & Spice</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Ember & Spice Logo">
+            <h2>Ember <span>&</span> Spice</h2>
+        </a>
+        
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Wrapper -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class="reserve-btn">Reserve Table</a>
+        </div>
+    </nav>
+    <!-- CHINGARIYAN / SPARKS -->
+    <div class="embers">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- CONTACT HERO SECTION -->
+    <section class="contact-hero">
+        <video autoplay muted loop playsinline class="contact-hero-video">
+            <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930783_large.mp4" type="video/mp4">
+        </video>
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-content">
+            <h1 class="reveal">Get In Touch</h1>
+            <p class="reveal">We’d love to hear from you or host your next evening.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT MAIN SECTION -->
+    <section class="contact-section">
+        <div class="contact-container">
+            
+            <!-- Contact Form -->
+            <div class="contact-form reveal">
+                <h2>Send us a Message</h2>
+                <p>Have a question or want to book a private event? Fill out the form below!</p>
+                
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" required>
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea required></textarea>
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <!-- Contact Info & Map -->
+            <div class="contact-info reveal">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Our Location</h4>
+                    <p>123 Grill Street, Food Avenue, Lahore, Pakistan</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Call Us</h4>
+                    <p>+92 300 1234567</p>
+                    <p>+92 42 35678901</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Us</h4>
+                    <p>info@emberandspice.com</p>
+                    <p>reservations@emberandspice.com</p>
+                </div>
+
+                <!-- Google Map Embed -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.0!2d74.35!3d31.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDMxJzEyLjAiTiA3NMKwMjEnMDAuMCJF!5e0!3m2!1sen!2s!4v1234567890" width="100%" height="250" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Ember <span>&</span> Spice</h3>
+                <p>Premium BBQ, Authentic Spices & Unforgettable Evenings.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 12:00 PM - 11:00 PM</p>
+                <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Grill Street, Food City</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@emberandspice.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ember & Spice. Designed by Muhammad Jawad Ahmed</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

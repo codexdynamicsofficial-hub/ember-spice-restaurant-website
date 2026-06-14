@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Jawad Ahmed">
+    <meta name="description" content="Premium BBQ, grilled specialties, and unforgettable dining experiences.">
+    <meta name="keywords" content="restaurant, bbq, cafe, food, grill">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Spice Restaurant</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Ember & Spice Logo">
+            <h2>Ember <span>&</span> Spice</h2>
+        </a>
+        
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Wrapper -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class="reserve-btn">Reserve Table</a>
+        </div>
+    </nav>
+
+    <!-- CHINGARIYAN / SPARKS (Puri screen par fixed) -->
+    <div class="embers">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <video id="hero-video" class="hero-video" autoplay muted loop playsinline>
+            <!-- Apni local video yahan lagayein -->
+            <source src="chef-video.mp4" type="video/mp4">
+            
+            <!-- AGAR APNI VIDEO NAHI CHALE, TOH NICHE WALI LINE SE TEST KAREIN (Comment hata lein) -->
+            <!-- <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930783_large.mp4" type="video/mp4"> -->
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1>Where Fire Meets Flavor</h1>
+            <p>Experience the art of smoky perfection with our premium wood-fire grills and authentic spices.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn-primary">View Our Menu</a>
+                <a href="reserve.html" class="btn-secondary">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior">
+        </div>
+        <div class="about-text">
+            <h3>Our Story</h3>
+            <h2>The Ember & Spice Experience</h2>
+            <p>Born from a passion for authentic grilling, Ember & Spice brings you the finest cuts cooked slowly over natural embers, seasoned with hand-picked spices from around the world. It's not just a meal; it's a fiery experience.</p>
+            <a href="#" class="btn-primary">Read More</a>
+        </div>
+    </section>
+
+    <!-- SIGNATURE DISHES -->
+    <section class="dishes-section">
+        <div class="section-title">
+            <h3>From the Grill</h3>
+            <h2>Our Chef's Specials</h2>
+        </div>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Smoky BBQ Ribs">
+                <div class="dish-info">
+                    <div class="dish-name-price">
+                        <h4>Smoky BBQ Ribs</h4>
+                        <span class="price">Rs 250</span>
+                    </div>
+                    <p>Slow-cooked ribs with our signature ember-glaze sauce.</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80" alt="Spicy Grilled Chicken">
+                <div class="dish-info">
+                    <div class="dish-name-price">
+                        <h4>Spicy Grilled Chicken</h4>
+                        <span class="price">Rs 300</span>
+                    </div>
+                    <p>Marinated in secret spices, grilled to juicy perfection.</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="Ember Steak">
+                <div class="dish-info">
+                    <div class="dish-name-price">
+                        <h4>Ember Steak</h4>
+                        <span class="price">Rs 500</span>
+                    </div>
+                    <p>Premium cut, wood-fire grilled with rosemary butter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-section">
+        <div class="feature-item">
+            <i class="fas fa-fire"></i>
+            <h4>Wood-Fire Grill</h4>
+            <p>Authentic embers for that unmatched smoky flavor.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-pepper-hot"></i>
+            <h4>Secret Spices</h4>
+            <p>Hand-picked blends to ignite your taste buds.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-wine-glass-alt"></i>
+            <h4>Fine Ambiance</h4>
+            <p>A warm, cozy atmosphere perfect for your evenings.</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="reviews-section">
+        <div class="section-title">
+            <h3>Testimonials</h3>
+            <h2>What Our Guests Say</h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"The best BBQ in town! The ribs just melted in my mouth. Absolutely coming back."</p>
+                <h4>- Ahmed K.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Beautiful ambiance and the spices are genuinely authentic. Loved the Ember Steak!"</p>
+                <h4>- Sarah M.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+        <h2>Ready for a Smoky Evening?</h2>
+        <p>Book your table now and experience the fire!</p>
+        <a href="#" class="btn-primary">Book Your Table</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Ember <span>&</span> Spice</h3>
+                <p>Premium BBQ, Authentic Spices & Unforgettable Evenings.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 12:00 PM - 11:00 PM</p>
+                <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Grill Street, Food City</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@emberandspice.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ember & Spice. Designed by Muhammad Jawad Ahmed</p>
+        </div>
+    </footer>
+
+    <!-- JS File Link -->
+    <script src="script.js"></script>
+</body>
+</html>

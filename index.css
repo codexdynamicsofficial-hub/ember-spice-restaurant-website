@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F1E8;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(18, 18, 18, 0.9);
+    border-bottom: 1px solid rgba(217, 106, 29, 0.2);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    top: 0;
+    z-index: 9999; /* Sab se upar */
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+}
+
+.logo-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-container h2 {
+    color: #F5F1E8;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.logo-container span {
+    color: #D96A1D;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F5F1E8;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F28C28;
+}
+
+.reserve-btn {
+    text-decoration: none;
+    background: #D96A1D;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.reserve-btn:hover {
+    background: #F28C28;
+    transform: translateY(-2px);
+}
+
+/* GENERAL BUTTONS */
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background: #D96A1D;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #F28C28;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #D96A1D;
+    color: #F5F1E8;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-left: 15px;
+}
+
+.btn-secondary:hover {
+    background: #D96A1D;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #000; 
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(18,18,18,0.95));
+    z-index: 2; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3; 
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    color: #F5F1E8;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(217,106,29,0.6); 
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CHINGARIYAN / SPARKS - FIXED & ALWAYS ON TOP */
+.embers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; /* Navbar ke theek neeche, baqi sab ke upar */
+    pointer-events: none; /* Taake click karne mein masla na aaye */
+}
+
+.embers span {
+    position: absolute;
+    bottom: -20px;
+    background: #ffae00;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #D96A1D, 0 0 20px #F28C28, 0 0 3px #fff;
+    animation: riseEmber linear infinite;
+}
+
+.embers span:nth-child(odd) { width: 4px; height: 4px; }
+.embers span:nth-child(even) { width: 6px; height: 6px; }
+
+.embers span:nth-child(1) { left: 5%; animation-duration: 4s; animation-delay: 0s; }
+.embers span:nth-child(2) { left: 15%; animation-duration: 6s; animation-delay: 1s; }
+.embers span:nth-child(3) { left: 25%; animation-duration: 5s; animation-delay: 0.5s; }
+.embers span:nth-child(4) { left: 35%; animation-duration: 7s; animation-delay: 2s; }
+.embers span:nth-child(5) { left: 45%; animation-duration: 4.5s; animation-delay: 1.5s; }
+.embers span:nth-child(6) { left: 55%; animation-duration: 6.5s; animation-delay: 0.8s; }
+.embers span:nth-child(7) { left: 65%; animation-duration: 5.5s; animation-delay: 2.5s; }
+.embers span:nth-child(8) { left: 75%; animation-duration: 7.5s; animation-delay: 0.2s; }
+.embers span:nth-child(9) { left: 85%; animation-duration: 4.8s; animation-delay: 1.2s; }
+.embers span:nth-child(10) { left: 95%; animation-duration: 6.2s; animation-delay: 3s; }
+.embers span:nth-child(11) { left: 10%; animation-duration: 5.2s; animation-delay: 1.8s; }
+.embers span:nth-child(12) { left: 20%; animation-duration: 7.2s; animation-delay: 0.4s; }
+.embers span:nth-child(13) { left: 50%; animation-duration: 4.4s; animation-delay: 2.2s; }
+.embers span:nth-child(14) { left: 70%; animation-duration: 6.8s; animation-delay: 0.9s; }
+.embers span:nth-child(15) { left: 90%; animation-duration: 5.8s; animation-delay: 1.6s; }
+
+@keyframes riseEmber {
+    0% { opacity: 0; transform: translateY(0) scale(1); }
+    20% { opacity: 1; }
+    80% { opacity: 0.8; }
+    100% { opacity: 0; transform: translateY(-1000px) scale(0.2); }
+}
+
+/* ABOUT SECTION (z-index hata diya hai) */
+.about-section {
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: #121212;
+}
+
+.about-img { flex: 1; }
+.about-img img { width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(217, 106, 29, 0.2); }
+.about-text { flex: 1; }
+.about-text h3 { color: #D96A1D; font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 600; }
+.about-text h2 { font-size: 38px; margin: 10px 0 20px; }
+.about-text p { color: #ccc; line-height: 1.8; margin-bottom: 30px; }
+
+/* SIGNATURE DISHES (z-index hata diya hai) */
+.dishes-section { padding: 100px 8%; background: #1a1a1a; }
+.section-title { text-align: center; margin-bottom: 50px; }
+.section-title h3 { color: #D96A1D; font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 600; }
+.section-title h2 { font-size: 42px; margin-top: 10px; }
+
+.dishes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.dish-card { background: #121212; border-radius: 12px; overflow: hidden; transition: transform 0.3s; border: 1px solid rgba(217,106,29,0.1); }
+.dish-card:hover { transform: translateY(-10px); border-color: rgba(217,106,29,0.5); }
+.dish-card img { width: 100%; height: 250px; object-fit: cover; }
+.dish-info { padding: 20px; }
+.dish-name-price { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.dish-name-price h4 { font-size: 22px; }
+.price { color: #D96A1D; font-size: 20px; font-weight: 700; }
+.dish-info p { color: #aaa; font-size: 14px; }
+
+/* FEATURES (z-index hata diya hai) */
+.features-section { padding: 100px 8%; display: flex; justify-content: space-between; text-align: center; gap: 40px; background: #121212; }
+.feature-item { flex: 1; padding: 40px 20px; }
+.feature-item i { font-size: 48px; color: #D96A1D; margin-bottom: 20px; }
+.feature-item h4 { font-size: 24px; margin-bottom: 15px; }
+.feature-item p { color: #aaa; }
+
+/* REVIEWS (z-index hata diya hai) */
+.reviews-section { padding: 100px 8%; background: #1a1a1a; }
+.reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+.review-card { background: #121212; padding: 40px; border-radius: 12px; border-left: 4px solid #D96A1D; }
+.stars { margin-bottom: 15px; color: #F28C28; }
+.review-card p { font-style: italic; color: #ccc; line-height: 1.8; margin-bottom: 20px; }
+.review-card h4 { color: #D96A1D; font-family: 'Poppins', sans-serif; font-weight: 600; }
+
+/* CTA (z-index hata diya hai) */
+.cta-section { padding: 100px 8%; text-align: center; background: linear-gradient(rgba(217, 106, 29, 0.9), rgba(242, 140, 40, 0.9)); }
+.cta-section h2 { font-size: 48px; margin-bottom: 20px; color: #121212; }
+.cta-section p { font-size: 20px; margin-bottom: 40px; color: #121212; }
+.cta-section .btn-primary { background: #121212; color: #F5F1E8; }
+.cta-section .btn-primary:hover { background: #333; }
+
+/* FOOTER (z-index hata diya hai) */
+footer { background: #0a0a0a; padding: 80px 8% 20px; color: #aaa; }
+.footer-content { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; }
+.footer-col h3 { font-size: 28px; color: #F5F1E8; margin-bottom: 20px; }
+.footer-col h3 span { color: #D96A1D; }
+.footer-col h4 { font-size: 20px; color: #F5F1E8; margin-bottom: 20px; font-family: 'Poppins', sans-serif; }
+.footer-col p { margin-bottom: 10px; font-size: 14px; }
+.social-links { margin-top: 20px; }
+.social-links a { color: #F5F1E8; font-size: 20px; margin-right: 15px; transition: 0.3s; }
+.social-links a:hover { color: #D96A1D; }
+.footer-col ul { list-style: none; }
+.footer-col ul li a { text-decoration: none; color: #aaa; display: block; margin-bottom: 10px; transition: 0.3s; }
+.footer-col ul li a:hover { color: #D96A1D; padding-left: 5px; }
+.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 14px; }

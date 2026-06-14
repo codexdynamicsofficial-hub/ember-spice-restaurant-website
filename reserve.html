@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Jawad Ahmed">
+    <meta name="description" content="Reserve your table at Ember & Spice.">
+    <meta name="keywords" content="restaurant, reservation, booking, bbq">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Table - Ember & Spice</title>
+    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Ember & Spice Logo">
+            <h2>Ember <span>&</span> Spice</h2>
+        </a>
+        
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Wrapper -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class="reserve-btn">Reserve Table</a>
+        </div>
+    </nav>
+
+    <!-- CHINGARIYAN / SPARKS -->
+    <div class="embers">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- RESERVE HERO SECTION -->
+    <section class="reserve-hero">
+        <video autoplay muted loop playsinline class="reserve-hero-video">
+            <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930783_large.mp4" type="video/mp4">
+        </video>
+        <div class="reserve-hero-overlay"></div>
+        <div class="reserve-hero-content">
+            <h1 class="reveal">Book Your Experience</h1>
+            <p class="reveal">Secure your spot with a 50% advance and let the feast begin!</p>
+        </div>
+    </section>
+
+    <!-- RESERVATION FORM SECTION -->
+    <section class="booking-section" id="bookingSection">
+        <div class="booking-container">
+            
+            <!-- Booking Details -->
+            <div class="booking-form reveal">
+                <h2>Reservation Details</h2>
+                <form id="reserveForm">
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" required>
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="date" required>
+                            <label>Date</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="time" required>
+                            <label>Time</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <select required>
+                            <option value="" disabled selected>Number of Guests</option>
+                            <option>1 - 2 Guests</option>
+                            <option>3 - 5 Guests</option>
+                            <option>6 - 10 Guests</option>
+                            <option>10+ (Private Area)</option>
+                        </select>
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div class="payment-section">
+                        <h3>50% Advance Payment</h3>
+                        <p class="price-tag">Advance Amount: <span>Rs. 1,500</span></p>
+                        
+                        <div class="payment-methods">
+                            <label class="method-card active">
+                                <input type="radio" name="payment" value="card" checked>
+                                <i class="fas fa-credit-card"></i> Credit/Debit Card
+                            </label>
+                            <label class="method-card">
+                                <input type="radio" name="payment" value="jazzcash">
+                                <i class="fas fa-mobile-alt"></i> JazzCash
+                            </label>
+                            <label class="method-card">
+                                <input type="radio" name="payment" value="easypaisa">
+                                <i class="fas fa-wallet"></i> EasyPaisa
+                            </label>
+                        </div>
+
+                        <!-- Card Details (Default Visible) -->
+                        <div class="card-details" id="cardDetails">
+                            <div class="input-group">
+                                <input type="text" required>
+                                <label>Card Number</label>
+                            </div>
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" required>
+                                    <label>Expiry (MM/YY)</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" required>
+                                    <label>CVV</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Account Details (Hidden by default) -->
+                        <div class="mobile-details" id="mobileDetails" style="display: none;">
+                            <div class="input-group">
+                                <input type="tel" required>
+                                <label>JazzCash / EasyPaisa Number</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" required>
+                                <label>OTP / PIN</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary pay-btn">Pay & Reserve Table <i class="fas fa-lock"></i></button>
+                </form>
+            </div>
+
+            <!-- Summary Sidebar -->
+            <div class="booking-summary reveal">
+                <h3>Booking Summary</h3>
+                <div class="summary-item">
+                    <span>Restaurant</span>
+                    <p>Ember & Spice</p>
+                </div>
+                <div class="summary-item">
+                    <span>Advance Policy</span>
+                    <p>50% Non-refundable</p>
+                </div>
+                <div class="summary-item">
+                    <span>Confirmation</span>
+                    <p>Instant via SMS/Email</p>
+                </div>
+                <div class="summary-total">
+                    <span>Total Advance</span>
+                    <p>Rs. 1,500</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SUCCESS POPUP / OVERLAY (Hidden by default) -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="fireworks-container" id="fireworksContainer"></div>
+        <div class="success-content">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h1>Congratulations!</h1>
+            <h2>Your Table is Booked!</h2>
+            <div class="table-number-box">
+                <p>Your Assigned Table</p>
+                <h1 id="assignedTable">E-7</h1>
+            </div>
+            <p class="success-msg">We look forward to hosting you. A confirmation has been sent to your phone.</p>
+            <a href="contact.html" class="btn-primary">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Ember <span>&</span> Spice</h3>
+                <p>Premium BBQ, Authentic Spices & Unforgettable Evenings.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 12:00 PM - 11:00 PM</p>
+                <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Grill Street, Food City</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@emberandspice.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ember & Spice. Designed by Muhammad Jawad Ahmed</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

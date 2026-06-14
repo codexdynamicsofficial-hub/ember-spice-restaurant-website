@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Jawad Ahmed">
+    <meta name="description" content="Visual journey of Ember & Spice Restaurant.">
+    <meta name="keywords" content="restaurant, gallery, bbq, food, ambiance">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Ember & Spice</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Ember & Spice Logo">
+            <h2>Ember <span>&</span> Spice</h2>
+        </a>
+        
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Wrapper -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class="reserve-btn">Reserve Table</a>
+        </div>
+    </nav>
+    <!-- CHINGARIYAN / SPARKS -->
+    <div class="embers">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- GALLERY HERO SECTION -->
+    <section class="gallery-hero">
+        <video autoplay muted loop playsinline class="gallery-hero-video">
+            <source src="https://cdn.pixabay.com/video/2020/07/30/45349-445048498_large.mp4" type="video/mp4">
+        </video>
+        <div class="gallery-hero-overlay"></div>
+        <div class="gallery-hero-content">
+            <h1 class="reveal">The Visual Feast</h1>
+            <p class="reveal">A glimpse into the fire, flavor, and ambiance.</p>
+        </div>
+    </section>
+
+    <!-- FILTER BUTTONS -->
+    <section class="filter-section">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ambiance">Ambiance</button>
+        <button class="filter-btn" data-filter="bbq">The Grill</button>
+        <button class="filter-btn" data-filter="platter">Platters</button>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            
+            <!-- Item 1 (Tall) -->
+            <div class="gallery-item reveal tall" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Dining Area</h3>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="gallery-item reveal" data-category="bbq">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Grill Fire">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Flames of Flavor</h3>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="gallery-item reveal" data-category="platter">
+                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80" alt="Food Platter">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Signature Dishes</h3>
+                </div>
+            </div>
+
+            <!-- Item 4 (Tall) -->
+            <div class="gallery-item reveal tall" data-category="bbq">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="BBQ Ribs">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Smoky Ribs</h3>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="gallery-item reveal" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Table Setting">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Perfect Setup</h3>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="gallery-item reveal" data-category="platter">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80" alt="Dessert">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Sweet Endings</h3>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="gallery-item reveal" data-category="bbq">
+                <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80" alt="Grilled Chicken">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Charcoal Chicken</h3>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="gallery-item reveal" data-category="ambiance">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Bar Area">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>The Bar</h3>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="gallery-item reveal" data-category="platter">
+                <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80" alt="Kebab Platter">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                    <h3>Kebab Selection</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Ember <span>&</span> Spice</h3>
+                <p>Premium BBQ, Authentic Spices & Unforgettable Evenings.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 12:00 PM - 11:00 PM</p>
+                <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Grill Street, Food City</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@emberandspice.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ember & Spice. Designed by Muhammad Jawad Ahmed</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* ========================================= */
+/* UNIVERSAL RESPONSIVE CSS (FINAL FIX)      */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box !important;
+    }
+    
+    body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    /* --- 1. HAMBURGER NAVBAR --- */
+    .hamburger {
+        display: block !important;
+        font-size: 28px;
+        cursor: pointer;
+        color: #F5F1E8;
+        z-index: 10001;
+    }
+
+    .navbar {
+        padding: 15px 5% !important;
+        position: relative !important;
+    }
+    
+    .logo-container img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    
+    .logo-container h2 {
+        font-size: 22px !important;
+    }
+
+    /* LEFT SIDE Slide-in Menu */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 75%;
+        height: 100vh;
+        background: rgba(18, 18, 18, 0.98);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: center;
+        padding-top: 80px;
+        gap: 20px !important;
+        transition: left 0.4s ease-in-out;
+        z-index: 10000;
+        border-right: 2px solid rgba(217,106,29,0.2);
+        overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+        left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px !important;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 20px !important;
+        display: block;
+        padding: 5px 0;
+    }
+    
+    .reserve-btn {
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    /* --- 2. HERO SECTIONS --- */
+    .hero, .menu-hero, .about-hero, .gallery-hero, .contact-hero, .reserve-hero {
+        padding-top: 50px !important;
+        height: auto !important;
+        min-height: 60vh !important;
+        position: relative;
+    }
+    
+    .hero-content, .menu-hero-content, .about-hero-content, 
+    .gallery-hero-content, .contact-hero-content, .reserve-hero-content {
+        padding: 60px 20px !important;
+    }
+    
+    .hero-content h1, .menu-hero-content h1, .about-hero-content h1, 
+    .gallery-hero-content h1, .contact-hero-content h1, .reserve-hero-content h1 {
+        font-size: 36px !important;
+    }
+    
+    .hero-content p, .menu-hero-content p, .about-hero-content p, 
+    .gallery-hero-content p, .contact-hero-content p, .reserve-hero-content p {
+        font-size: 16px !important;
+    }
+
+    /* --- 3. TEXT & SPLIT SECTIONS (Center Stack) --- */
+    .about-section, .chef-section, .contact-container, .booking-container {
+        flex-direction: column !important;
+        padding: 50px 5% !important;
+        gap: 30px !important;
+        overflow: hidden !important;
+        text-align: center !important; 
+    }
+    
+    .about-img, .about-text, .chef-img, .chef-text, 
+    .contact-form, .contact-info, .booking-form, .booking-summary {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    /* FIX: Images center aur perfect size on mobile */
+    .about-img img, .chef-img img {
+        width: 100% !important;
+        max-width: 500px !important; /* Zyada badi nahi hogi */
+        margin: 0 auto !important; /* Center image */
+        height: auto !important;
+        border-radius: 12px !important;
+    }
+
+    /* --- 4. NORMAL SECTIONS (Features, Reviews, Values) - NO SLIDING --- */
+    .features-section {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 50px 5% !important;
+    }
+    
+    .feature-item {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 30px 10px !important;
+    }
+
+    .reviews-grid, .values-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        overflow-x: hidden !important;
+        padding: 0 !important;
+    }
+    
+    .review-card, .value-card {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* --- 5. ONLY SLIDER SECTIONS (Menu, Gallery) --- */
+    .dishes-grid, .gallery-grid, .menu-slider {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory !important;
+        gap: 15px !important;
+        padding: 20px 5% 40px 5% !important;
+        scrollbar-width: none !important;
+        width: 100% !important;
+    }
+
+    .dishes-grid::-webkit-scrollbar, .gallery-grid::-webkit-scrollbar, 
+    .menu-slider::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .dish-card, .gallery-item, .menu-card {
+        min-width: 80vw !important;
+        max-width: 80vw !important;
+        scroll-snap-align: start !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .gallery-item.tall {
+        grid-row: span 1 !important;
+        height: 250px !important;
+    }
+    
+    .gallery-item {
+        height: 250px !important;
+    }
+
+    /* --- 6. FORMS & FOOTER --- */
+    .row {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .payment-methods {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    
+    .input-group {
+        width: 100% !important;
+    }
+    
+    .input-group input, .input-group select, .input-group textarea {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 30px !important;
+    }
+    
+    .social-links {
+        justify-content: center !important;
+    }
+    
+    .footer-col ul li a:hover {
+        padding-left: 0 !important;
+    }
+
+    /* Hide Slider Arrow Buttons on Mobile */
+    .slider-nav {
+        display: none !important;
+    }
+}
+    /* --- ABOUT PAGE STORY & CHEF SECTION MOBILE FIX --- */
+    .about-story-section, .chef-section {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 50px 5% !important;
+        gap: 30px !important;
+        overflow: hidden !important;
+    }
+
+    .story-img, .story-text, .chef-img, .chef-text {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .story-img img, .chef-img img {
+        max-width: 500px !important; /* Image itni badi nahi hogi */
+        margin: 0 auto !important; /* Center image */
+        height: auto !important;
+        border-radius: 12px !important;
+    }
+/* --- VERY SMALL MOBILES --- */
+@media (max-width: 480px) {
+    .hero-content h1, .menu-hero-content h1, .about-hero-content h1, 
+    .gallery-hero-content h1, .contact-hero-content h1, .reserve-hero-content h1 {
+        font-size: 28px !important;
+    }
+    
+    .reserve-btn {
+        padding: 8px 15px !important;
+        font-size: 14px !important;
+    }
+    
+    .booking-form, .contact-form, .booking-summary {
+        padding: 20px !important;
+    }
+}
+
+/* --- DESKTOP FIXES --- */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none !important;
+    }
+    .mobile-menu {
+        display: flex !important;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+        left: 0 !important;
+        flex-direction: row;
+        padding: 0;
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+        height: auto;
+        width: auto;
+    }
+}

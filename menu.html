@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Jawad Ahmed">
+    <meta name="description" content="Premium BBQ, grilled specialties, and unforgettable dining experiences.">
+    <meta name="keywords" content="restaurant, bbq, cafe, food, grill, menu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Ember & Spice</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="Ember & Spice Logo">
+            <h2>Ember <span>&</span> Spice</h2>
+        </a>
+        
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Wrapper -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="reserve.html" class="reserve-btn">Reserve Table</a>
+        </div>
+    </nav>
+
+    <!-- CHINGARIYAN / SPARKS -->
+    <div class="embers">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- MENU HERO SECTION -->
+    <section class="menu-hero">
+        <video autoplay muted loop playsinline class="menu-hero-video">
+            <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930783_large.mp4" type="video/mp4">
+        </video>
+        <div class="menu-hero-overlay"></div>
+        <div class="menu-hero-content">
+            <h1 class="reveal">Our Desi Menu</h1>
+            <p class="reveal">Authentic Pakistani flavors, straight from the embers to your table.</p>
+        </div>
+    </section>
+
+    <!-- FILTER BUTTONS -->
+    <section class="filter-section">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="bbq">BBQ & Grill</button>
+        <button class="filter-btn" data-filter="mains">Mains</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+    </section>
+
+    <!-- MENU SLIDER SECTION -->
+    <section class="menu-slider-section">
+        
+        <!-- Left Arrow -->
+        <button class="slider-nav prev-btn"><i class="fas fa-chevron-left"></i></button>
+
+        <div class="menu-slider">
+            <!-- ITEM 1 -->
+            <div class="menu-card reveal" data-category="starters">
+                <div class="card-media">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Seekh Kebab">
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Samosa</h3><span class="price">Rs 550</span></div>
+                    <p>Perfect Aloo Samosa with Green chatni you have not ever tried</p>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="menu-card reveal" data-category="bbq">
+                <div class="card-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://cdn.pixabay.com/video/2020/07/30/45349-445048498_large.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Chicken Tikka</h3><span class="price">Rs 750</span></div>
+                    <p>Juicy boneless chicken marinated in spicy red yogurt, sizzling hot.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="menu-card reveal" data-category="starters">
+                <div class="card-media">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=600&q=80" alt="Malai Boti">
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Malai Boti</h3><span class="price">Rs 700</span></div>
+                    <p>Creamy, mildly spiced chicken chunks cooked to melt-in-your-mouth perfection.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="menu-card reveal" data-category="mains">
+                <div class="card-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://cdn.pixabay.com/video/2021/02/22/65883-516025558_large.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Sizzling Biryani</h3><span class="price">Rs 900</span></div>
+                    <p>Aromatic basmati rice layered with tender meat and secret spices.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 5 -->
+            <div class="menu-card reveal" data-category="bbq">
+                <div class="card-media">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Chargha">
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Full Chargha</h3><span class="price">Rs 1800</span></div>
+                    <p>Whole chicken marinated in traditional spices, deep-fried to a golden crisp.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 6 -->
+            <div class="menu-card reveal" data-category="mains">
+                <div class="card-media">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80" alt="Karahi">
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Mutton Karahi</h3><span class="price">Rs 2200</span></div>
+                    <p>Fresh mutton cooked in tomato gravy with green chilies in pure desi ghee.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 7 -->
+            <div class="menu-card reveal" data-category="starters">
+                <div class="card-media">
+                    <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80" alt="Chapli Kebab">
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Chapli Kebab</h3><span class="price">Rs 450</span></div>
+                    <p>Peshawari style spiced beef patties, pan-fried to a delicious crisp.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 8 -->
+            <div class="menu-card reveal" data-category="desserts">
+                <div class="card-media">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80" alt="Gulab Jamun">
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Gulab Jamun</h3><span class="price">Rs 300</span></div>
+                    <p>Soft milk dumplings soaked in warm cardamom rose syrup.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 9 -->
+            <div class="menu-card reveal" data-category="desserts">
+                <div class="card-media">
+                    <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=600&q=80" alt="Kheer">
+                </div>
+                <div class="card-content">
+                    <div class="card-title-price"><h3>Ember Kheer</h3><span class="price">Rs 350</span></div>
+                    <p>Traditional slow-cooked rice pudding garnished with pistachios & almonds.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="slider-nav next-btn"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Ember <span>&</span> Spice</h3>
+                <p>Premium BBQ, Authentic Spices & Unforgettable Evenings.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 12:00 PM - 11:00 PM</p>
+                <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Grill Street, Food City</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> info@emberandspice.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ember & Spice. Designed by Muhammad Jawad Ahmed</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
